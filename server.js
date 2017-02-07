@@ -14,7 +14,8 @@ var articles = {
                     <p>
                     Content for the article one.Content for the article one.
                     </p>
-        `},
+        `
+    },
     'article-two' : {
         title: 'Article Two',
         heading: 'Article Two',
@@ -23,7 +24,8 @@ var articles = {
                     <p>
                     Content for the article Two.Content for the article Two.
                     </p>
-        `},
+        `
+    },
     'article-three' : {
         title: 'Article Three',
         heading: 'Article Three',
@@ -32,10 +34,11 @@ var articles = {
                     <p>
                     Content for the article Three.Content for the article Three.
                     </p>
-        `}
+        `
+    }
 };
 
-function createTemplate(data) {
+function createTemplate (data) {
 
     var title = data.title;
     var heading = data.heading;
@@ -45,7 +48,9 @@ function createTemplate(data) {
     var htmlTemplate = `
     <html>
         <head>
-            <title>${title}</title>
+            <title>
+                ${title}
+            </title>
             <meta name="viewport" content="width=device-width, intial-scale=1" />
             <link rel="stylesheet" type="text/css" href="/ui/style.css">
         </head>
